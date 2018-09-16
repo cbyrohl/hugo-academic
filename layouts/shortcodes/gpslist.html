@@ -45,7 +45,7 @@
 		maps[{{$i}}].addLayer(terrains[{{$i}}]);
 		tracks[{{$i}}].addTo(maps[{{$i}}]);
 		maps[{{$i}}].fitBounds(tracks[{{$i}}].getBounds());
-		L.control.scale().addTo(maps[i]);
+		L.control.scale().addTo(maps[{{$i}}]);
 	   });
 	}); 
 
