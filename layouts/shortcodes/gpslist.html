@@ -5,7 +5,7 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-		<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ index $r 0 }}">Day {{ index $r 0 }}</a><p style="float:right; white-space: nowrap;">Distance {{ index $r 1 }}km   (<img src="/webpage/img/symbols/mountain_up.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img>{{ index $r 2 }}m <img src="/webpage/img/symbols/mountain_down.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img> {{ index $r 3 }}m) <a href="/webpage/gps/HRP/Day{{printf "%02d" $i}}.gpx" download><img src="/webpage/img/symbols/download.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img></a></p>
+		<a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ index $r 0 }}">Day {{ index $r 0 }}</a><p style="float:right; white-space: nowrap;">Distance {{ index $r 1 }}km   (<img src="/img/symbols/mountain_up.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img>{{ index $r 2 }}m <img src="/img/symbols/mountain_down.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img> {{ index $r 3 }}m) <a href="/gps/HRP/Day{{printf "%02d" $i}}.gpx" download><img src="/img/symbols/download.png" style="all:initial; height:1.2em;width:1em;margin: 0px; border:None; padding:0px;"></img></a></p>
         </h4>
       </div>
       <div id="collapse{{ index $r 0 }}" class="panel-collapse collapse">
@@ -37,7 +37,7 @@
 });
 	terrains.push(Stamen_Terrain)
 
-	var track = omnivore.gpx("/webpage/gps/HRP/Day"+("0" + i.toString()).slice(-2)+".gpx");
+	var track = omnivore.gpx("/gps/HRP/Day"+("0" + i.toString()).slice(-2)+".gpx");
 	tracks.push(track);
 
 	jQuery(document).ready(function () {
